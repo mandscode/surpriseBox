@@ -18,7 +18,7 @@ const LoginDashboard = () => {
           password: 'password3',
           token: 'ghi789'
         }
-      ];
+    ];
 
 
     const handleKeyDown = (event) => {
