@@ -78,8 +78,6 @@
                 transform: rotate(-110deg) scaleX(0.85);
             }
             
-            
-            
             #click:checked ~ .winner {
                 transform: translateY(-100px);
                 animation: zIndex 1s forwards;
@@ -88,8 +86,6 @@
             #click:checked ~ .sparkles {
                 display: block;
             }
-              
-              
               
             .sparkles {
                 position: absolute;
@@ -126,7 +122,6 @@
                 }
             }
               
-              
             .spark2 {
                 width: 9px;
                 height:9px;
@@ -146,7 +141,6 @@
                 }
             }
               
-              
             .spark3 {
                 width: 8.5px;
                 height:8.5px;
@@ -165,7 +159,6 @@
                     border-radius:50%;
                 }
             }
-              
               
             .spark4 {
                 width: 7px;
