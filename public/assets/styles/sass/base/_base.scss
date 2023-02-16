@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $Regular;
+    font-size: $regular-text;
+    background: $color-secondary;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 124rem;
+}
+
+.text__primary {
+    color: $color-primary;
+}

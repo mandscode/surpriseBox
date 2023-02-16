@@ -1,0 +1,130 @@
+._login {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+ }
+ 
+ .console {
+    background: #222;
+    border: solid 1px #444;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow: scroll;
+    padding: 60px 30px 30px 30px;
+    position: relative;
+    width: 600px;
+    
+    .toolbar {
+       align-items: center;
+       background: #444;
+       content: "";
+       display: flex;
+       height: 30px;
+       justify-content: flex-start;
+       left: 0;
+       position: absolute;
+       right: 0;
+       top: 0;
+       width: 100%;
+       z-index: 1;
+       
+       .pips {
+          background: #FEBB2E;
+          border-radius: 50%;
+          display: flex;
+          height: 12px;
+          left: 35px;
+          position: relative;
+          width: 12px;
+          
+          &:before {
+             background: #FF5F57;
+             border-radius: 50%;
+             content: "";
+             height: 12px;
+             left: -20px;
+             position: absolute;
+             width: 12px;
+          }
+          
+          &:after {
+             background: #2AC840;
+             border-radius: 50%;
+             content: "";
+             height: 12px;
+             position: relative;
+             right: -20px;
+             width: 12px;
+          }
+       }
+    }
+    
+    .console_output {
+       color: #fff;
+       font-size: 16px;
+       
+       span {
+          display: block;
+          margin-bottom: 3px;
+          
+          &:first-of-type {
+             color: limegreen;
+          }
+       }
+    }
+    
+    .console_input {
+      .Error {
+         display: none;
+          color: #fff;
+          font-family: monospace;
+          font-size: 16px;
+          margin-right: 9px;
+          width: 100%;
+          
+          &.activeClass{
+            display: flex !important;
+          }
+       }
+       span {
+          display: block;
+          
+          &.email-input,
+          &.password-input {
+             display: flex;
+             &.active{
+               display: flex;
+             }
+          }
+          
+          &.password-input {
+            display: none;
+          }
+ 
+          input {
+            background: transparent;
+            border: none;
+            color: #fff;
+            cursor: default;
+            font-family: monospace;
+            font-size: 16px;
+            padding: 0;
+
+            &:focus {
+               border: none;
+               outline: none;
+            }         
+          }
+ 
+          label {
+            color: #fff;
+            font-family: monospace;
+            font-size: 16px;
+            margin-right: 9px;
+         }
+      }
+   }
+}  
