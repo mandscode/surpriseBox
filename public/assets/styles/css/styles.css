@@ -208,7 +208,7 @@ body {
 .mystery__container {
   position: absolute;
   top: 45%;
-  left: 45%;
+  left: 15%;
 }
 .mystery__box {
   position: relative;
@@ -287,7 +287,7 @@ body {
   position: absolute;
   display: none;
   top: -15px;
-  z-index: -2;
+  z-index: 0;
   left: 40px;
 }
 .mystery__box .surprise .spark1, .mystery__box .surprise .spark2, .mystery__box .surprise .spark3, .mystery__box .surprise .spark4, .mystery__box .surprise .spark5, .mystery__box .surprise .spark6 {

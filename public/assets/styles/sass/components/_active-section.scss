@@ -2,7 +2,7 @@
     &__container {
         position: absolute;
         top: 45%;        
-        left: 45%;
+        left: 15%;
     }
 
     &__box {
@@ -95,7 +95,7 @@
                 position: absolute;
                 display: none;
                 top:-15px;
-                z-index:-2;
+                z-index: 0;
                 left:40px;
             }
               
@@ -210,6 +210,8 @@
         }
     }
 }
+
+// keyframes
     
 @keyframes fire3 {
     100% { 
