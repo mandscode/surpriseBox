@@ -12,13 +12,13 @@ const LoginCount = () => {
     React.useEffect(()=>{
         setToken(localStorage.getItem("token"));
     },[])
-
+    console.log(count2)
     return (
         <>
             {token === 'abc123' ? 
                 <span class="_login__count">Ben: {count1}</span> 
                 : 
-                token === 'abc456' ? <span class="_login__count">Akash: {count2}</span>
+                token === 'def456' ? <span class="_login__count">Akash: {count2}</span>
                 :
                 <span class="_login__count">Jas: {count3}</span>
             }
