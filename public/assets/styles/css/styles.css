@@ -344,19 +344,23 @@ body {
 
 .rules {
   position: absolute;
-  top: 70%;
+  top: 35%;
   max-width: 40%;
-  left: 15%;
+  left: 50%;
 }
 @media only screen and (max-width: 1024px) {
   .rules {
     max-width: 50%;
+    top: 60%;
+    left: 45%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .rules {
+    top: 65%;
     max-width: 100%;
-    padding-right: 2rem;
+    left: 15%;
+    padding-right: 1rem;
   }
 }
 .rules h2 {
@@ -368,6 +372,7 @@ body {
 }
 .rules li {
   color: ivory;
+  line-height: 2.8rem;
 }
 
 .mystery__container {
