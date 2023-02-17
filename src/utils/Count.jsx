@@ -16,11 +16,11 @@ const LoginCount = () => {
     return (
         <>
             {token === 'abc123' ? 
-                <span class="_login__count">User1: {count1}</span> 
+                <span class="_login__count">Ben: {count1}</span> 
                 : 
-                token === 'abc456' ? <span class="_login__count">User: {count2}</span>
+                token === 'abc456' ? <span class="_login__count">Akash: {count2}</span>
                 :
-                <span class="_login__count">User3: {count3}</span>
+                <span class="_login__count">Jas: {count3}</span>
             }
         </>
     );

@@ -177,5 +177,13 @@
 ._count__wrapper {
   position: absolute;
   top: 50%;
-  left: 28%;
+  left: 30%;
+  
+  @include for-tablet {
+    left: 50%;
+  }
+
+  @include for-phone {
+    left: 70%;
+  }
 }

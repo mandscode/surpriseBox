@@ -32,6 +32,11 @@ body {
   height: 100vh;
   justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  ._login {
+    padding: 0 2rem;
+  }
+}
 
 .console {
   background: #222;
@@ -122,10 +127,25 @@ body {
 .console .console_input span {
   display: block;
 }
-.console .console_input span.email-input, .console .console_input span.password-input {
+@media only screen and (max-width: 768px) {
+  .console .console_input span.email_input {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+}
+.console .console_input span.email_input.active {
   display: flex;
 }
-.console .console_input span.email-input.active, .console .console_input span.password-input.active {
+@media only screen and (max-width: 768px) {
+  .console .console_input span.password-input {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  .console .console_input span.password-input .email {
+    margin-right: 0;
+  }
+}
+.console .console_input span.password-input.active {
   display: flex;
 }
 .console .console_input span.password-input {
@@ -149,6 +169,11 @@ body {
   font-family: monospace;
   font-size: 16px;
   margin-right: 9px;
+}
+@media only screen and (max-width: 768px) {
+  .console .console_input span label {
+    margin-right: 0;
+  }
 }
 
 @keyframes gradient {
@@ -304,7 +329,17 @@ body {
 ._count__wrapper {
   position: absolute;
   top: 50%;
-  left: 28%;
+  left: 30%;
+}
+@media only screen and (max-width: 1024px) {
+  ._count__wrapper {
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  ._count__wrapper {
+    left: 70%;
+  }
 }
 
 .mystery__container {

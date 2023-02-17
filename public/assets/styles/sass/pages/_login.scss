@@ -3,7 +3,11 @@
     display: flex;
     height: 100vh;
     justify-content: center;
- }
+
+    @include for-phone {
+      padding: 0 2rem;
+    }
+   }
  
  .console {
     background: #222;
@@ -97,7 +101,7 @@
           font-size: 16px;
           margin-right: 9px;
           width: 100%;
-          
+
           &.activeClass{
             display: flex !important;
           }
@@ -105,19 +109,40 @@
        span {
           display: block;
           
-          &.email-input,
-          &.password-input {
-             display: flex;
-             &.active{
-               display: flex;
+          &.email_input {
+            
+             @include for-phone {
+               display: grid;
+               grid-template-columns: 45% 55%;
              }
-          }
+
+            &.active{
+               display: flex;
+                 
+            }
+         }
+           
+         &.password-input {
+
+            @include for-phone {
+               display: grid;
+               grid-template-columns: 45% 55%;
+            
+               .email {
+                  margin-right: 0;
+               }
+            }
+
+            &.active{
+               display: flex;
+            }
+         }
           
-          &.password-input {
+         &.password-input {
             display: none;
-          }
+         }
  
-          input {
+         input {
             background: transparent;
             border: none;
             color: #fff;
@@ -130,13 +155,17 @@
                border: none;
                outline: none;
             }         
-          }
+         }
  
-          label {
+         label {
             color: #fff;
             font-family: monospace;
             font-size: 16px;
             margin-right: 9px;
+
+            @include for-phone {
+               margin-right: 0;
+            }
          }
       }
    }
