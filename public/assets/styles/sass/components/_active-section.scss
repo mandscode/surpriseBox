@@ -67,9 +67,10 @@
             .winner {
                 position: absolute;
                 transition: .5s;
-                color: #333;
-                font-size: 37px;
+                color: #800080;
+                font-size: 4.5rem;
                 text-align: center;
+                width: 100%;
                 z-index:-1;
                 left:5px;
             }

@@ -89,6 +89,19 @@
             display: flex !important;
           }
        }
+
+      .UserError {
+         display: none;
+          color: #fff;
+          font-family: monospace;
+          font-size: 16px;
+          margin-right: 9px;
+          width: 100%;
+          
+          &.activeClass{
+            display: flex !important;
+          }
+       }
        span {
           display: block;
           
